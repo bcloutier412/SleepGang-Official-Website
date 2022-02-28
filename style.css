@@ -229,6 +229,10 @@ footer {
     background-color: #16697a; 
     height: 100px;
 }
+
+footer .col-md-4 {
+    text-align: center;
+}
 @keyframes scroll {
     0% {
         transform: translateX(0);
