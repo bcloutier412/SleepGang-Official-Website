@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-image: url("https://wallpaperaccess.com/full/3541036.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainNavbar .navbar-brand {
+    font-family: 'Crafty Girls', cursive;
+    font-size: 50px !important;
+}
+
+#mainNavbar .nav-item a {
+    /* font-family: 'Nova Mono', monospace;*/
+    font-family: 'Crafty Girls', cursive;
+    /* font-family: 'Londrina Outline', cursive; */
+    font-size: 25px;
+    color: #489FB5 !important;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: text-shadow .3s, transform .7s;
+}
+
+#mainNavbar .nav-item a:hover {
+    transform: translateY(-3px);
+    text-shadow: 2px 2px 5px gray;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 400px;
+}
+
+.banner-text p{
+    text-align: center;
+    width: 800px;
+    color: #82C0CC;
+    font-size: 5rem;
+    /* font-family: 'Nova Mono', monospace; */
+    font-family: 'Crafty Girls', cursive;
+    /* font-family: 'Londrina Outline', cursive; */
+}
+
+section {
+    /* background-color: #EDE7E3; */
+    height: 500px;
+}
+
+#ourMotive {
+    background-color: #ede7e3;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(255, 166, 43, 0.7) 5px 5px;
+    font-family: 'Crafty Girls', cursive;
+}
+
+#sleepSolutionsBtn {
+    background-color: #ede7e3;
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;   
+    border-radius: 50%;
+}
+
+#sleepSolutionsBtna {
+    text-decoration: none;
+    color: #16697a;
+}
+
+#ourMotive-image-right {
+    height: auto;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    box-shadow: rgba(255, 166, 43, 0.7) 5px 5px;
+    margin-bottom: 200px;
+}
+
+#Beginnings {
+    background-color: #ede7e3;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(255, 166, 43, 0.7) 5px 5px;
+    font-family: 'Crafty Girls', cursive;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#ourMotive-image-bottom {
+    margin-top: 150px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(255, 166, 43, 0.7) 5px 5px;
+}
+.navbar.scrolled {
+    background: #16697a;
+    transition: background 500ms;
+}
+
+main {
+    background-color: #ede7e3;
+    margin-top: 700px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    background: #ede7e3;
+    height: 250px;
+    margin: auto;
+    margin-top: 0px;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #16697a 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(250px * 18);
+
+}
+
+/* .slider .slide-track:hover {
+    animation-play-state: paused;
+} */
+
+.slider .slide {
+    height: 250px;
+    width: 250px;
+    transition: transform 1s;
+}
+.slider .slide:hover {
+    transform: translateY(-10px);
+}
+
+
+.slide:nth-child(1), .slide:nth-child(10) {
+    background-color: yellow;
+}
+
+.slide:nth-child(2), .slide:nth-child(11) {
+    background-color: coral;
+}
+
+.slide:nth-child(3), .slide:nth-child(12) {
+    background-color: blue;
+}
+
+.slide:nth-child(4), .slide:nth-child(13) {
+    background-color: red;
+}
+
+.slide:nth-child(5), .slide:nth-child(14) {
+    background-color: orange;
+}
+
+.slide:nth-child(6), .slide:nth-child(15) {
+    background-color: purple;
+}
+
+.slide:nth-child(7), .slide:nth-child(16) {
+    background-color: pink;
+}
+
+.slide:nth-child(8), .slide:nth-child(17) {
+    background-color: navy;
+}
+
+.slide:nth-child(9), .slide:nth-child(18) {
+    background-color: lime;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+@media (max-width: 991px) {
+    .navbar {
+        background: #16697a;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-text p {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-text p {
+        font-size: 3rem;
+    }
+    #mainNavbar .navbar-brand {
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 764px) {
+    main {
+        margin-top: 2000px;
+    }
+}
